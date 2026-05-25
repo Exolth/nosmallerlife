@@ -1,0 +1,172 @@
+/* ─── WRITING LIST PAGE ─── */
+.writing-main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20vh 6vw 12vh;
+}
+
+.writing-header {
+    margin-bottom: 8vh;
+}
+
+.writing-header h1 {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: var(--white);
+    letter-spacing: 0.03em;
+    margin-bottom: 1rem;
+}
+
+.writing-header p {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    font-weight: 300;
+    color: var(--grey);
+    line-height: 1.6;
+}
+
+.essay-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.essay-item {
+    display: grid;
+    grid-template-columns: 100px 1fr 24px;
+    align-items: start;
+    gap: 2rem;
+    padding: 3rem 0;
+    border-top: 1px solid #1e1e1e;
+    text-decoration: none;
+    transition: border-color 0.3s ease;
+}
+
+.essay-item:last-child {
+    border-bottom: 1px solid #1e1e1e;
+}
+
+.essay-item:hover .essay-arrow {
+    color: var(--warm);
+    transform: translateX(4px);
+}
+
+.essay-item:hover h2 {
+    color: var(--warm);
+}
+
+.essay-date {
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--grey);
+    padding-top: 0.3rem;
+}
+
+.essay-body h2 {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+    color: var(--white);
+    margin-bottom: 0.6rem;
+    transition: color 0.3s ease;
+}
+
+.essay-body p {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--grey);
+}
+
+.essay-arrow {
+    font-size: 1.1rem;
+    color: var(--grey);
+    padding-top: 0.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+/* ─── ESSAY PAGE ─── */
+.essay-page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20vh 6vw 14vh;
+}
+
+.essay-page-header {
+    margin-bottom: 6vh;
+}
+
+.essay-page-back {
+    display: inline-block;
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--grey);
+    text-decoration: none;
+    margin-bottom: 3rem;
+    transition: color 0.3s ease;
+}
+
+.essay-page-back:hover {
+    color: var(--white);
+}
+
+.essay-page-date {
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--grey);
+    margin-bottom: 1.2rem;
+}
+
+.essay-page-header h1 {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    color: var(--white);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.essay-body-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.essay-body-text p {
+    font-family: var(--font-serif);
+    font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+    font-weight: 300;
+    line-height: 1.95;
+    color: var(--white);
+    opacity: 0.88;
+}
+
+.essay-body-text p.italic {
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* ─── MOBILE ─── */
+@media (max-width: 768px) {
+    .essay-item {
+        grid-template-columns: 1fr 24px;
+        gap: 1rem;
+    }
+
+    .essay-date {
+        display: none;
+    }
+}
