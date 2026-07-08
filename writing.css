@@ -92,6 +92,29 @@
     display: inline-block;
 }
 
+/* ─── ESSAY INLINE IMAGES ─── */
+.essay-image {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.essay-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.95;
+}
+
+.essay-image.essay-image-selfie {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.essay-image.essay-image-selfie img {
+    border-radius: 2px;
+}
+
 /* ─── ESSAY PAGE ─── */
 .essay-page {
     max-width: 900px;
