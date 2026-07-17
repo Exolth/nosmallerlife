@@ -1,0 +1,195 @@
+/* ─── ACTIONS & POLICIES ─── */
+.actions-main {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 20vh 6vw 14vh;
+}
+
+.actions-header {
+    margin-bottom: 6vh;
+}
+
+.actions-header h1 {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: var(--white);
+    letter-spacing: 0.03em;
+    margin-bottom: 1rem;
+}
+
+.actions-intro-lead {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    color: var(--warm);
+    line-height: 1.6;
+}
+
+/* ─── STANCE BLOCK ─── */
+.actions-stance {
+    margin-bottom: 8vh;
+    padding-bottom: 6vh;
+    border-bottom: 1px solid #1e1e1e;
+}
+
+.actions-stance p {
+    font-family: var(--font-serif);
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    font-weight: 300;
+    line-height: 1.85;
+    color: var(--white);
+    opacity: 0.88;
+    margin-bottom: 1.5rem;
+}
+
+.actions-stance a {
+    color: var(--warm);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.actions-stance-closing {
+    font-style: italic;
+    color: var(--warm) !important;
+    opacity: 1 !important;
+    margin-bottom: 0 !important;
+}
+
+/* ─── CONSENSUS BLOCK ─── */
+.actions-consensus {
+    margin-bottom: 8vh;
+    padding: 4vh 5vw;
+    background-color: #111111;
+    border-radius: 2px;
+}
+
+.actions-consensus h2 {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.actions-consensus ol {
+    padding-left: 1.3rem;
+}
+
+.actions-consensus li {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--white);
+    opacity: 0.85;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+/* ─── TIERS ─── */
+.actions-tier {
+    margin-bottom: 7vh;
+}
+
+.actions-tier-header {
+    margin-bottom: 3vh;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.tier-marker {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.tier-high { background-color: #7a9a7e; }
+.tier-moderate { background-color: var(--warm); }
+.tier-lower { background-color: var(--grey); }
+
+.actions-tier-header h2 {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+    color: var(--white);
+}
+
+.actions-tier-header p {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--grey);
+    width: 100%;
+    margin-top: 0.3rem;
+}
+
+/* ─── ITEMS ─── */
+.actions-item {
+    padding: 2.5vh 0;
+    border-top: 1px solid #1e1e1e;
+}
+
+.actions-item h3 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+    color: var(--white);
+    margin-bottom: 0.6rem;
+}
+
+.actions-item p {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.75;
+    color: var(--grey);
+}
+
+.actions-item-compact {
+    border-top: 1px solid #1e1e1e;
+    padding: 2.5vh 0;
+}
+
+.actions-item-compact p {
+    color: var(--white);
+    opacity: 0.7;
+    line-height: 2;
+}
+
+.actions-item-list {
+    border-top: 1px solid #1e1e1e;
+    padding: 2.5vh 0;
+}
+
+.actions-item-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.actions-item-list li {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--white);
+    opacity: 0.85;
+    line-height: 2.2;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.actions-item-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--warm);
+}
+
+/* ─── MOBILE ─── */
+@media (max-width: 768px) {
+    .actions-main {
+        padding: 12vh 6vw 10vh;
+    }
+}
